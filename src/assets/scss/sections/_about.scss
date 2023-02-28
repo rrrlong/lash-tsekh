@@ -11,24 +11,24 @@ About Section Styles
     padding-top: 110px;
     padding-bottom: 170px;
 
-    @media (width < $BP1600) {
+    @media screen and (width < $BP1600) {
       & {
         padding-top: 60px;
         padding-bottom: 30px;
       }
     }
-    @media (width < $BP1200) {
+    @media screen and (width < $BP1200) {
       & {
         padding-top: 70px;
       }
     }
-    @media (width < $BP992) {
+    @media screen and (width < $BP992) {
       & {
         padding-top: 30px;
         padding-bottom: 40px;
       }
     }
-    @media (width < $BP768) {
+    @media screen and (width < $BP768) {
       & {
         padding-bottom: 80px;
       }
@@ -42,13 +42,13 @@ About Section Styles
       gap: 60px;
       height: 250px;
 
-      @media (width < $BP1200) {
+      @media screen and (width < $BP1200) {
         & {
           gap: 20px;
         }
       }
 
-      @media (width < $BP992) {
+      @media screen and (width < $BP992) {
         & {
           flex-direction: column;
           gap: 30px;
@@ -59,20 +59,20 @@ About Section Styles
       h1 {
         max-width: 980px;
 
-        @media (width < $BP992) {
+        @media screen and (width < $BP992) {
           & {
             align-self: flex-start;
             width: 70%;
           }
         }
 
-        @media (width < $BP768) {
+        @media screen and (width < $BP768) {
           & {
             width: 80%;
           }
         }
 
-        @media (width < $BP576) {
+        @media screen and (width < $BP576) {
           & {
             width: 100%;
           }
@@ -85,7 +85,7 @@ About Section Styles
         border-radius: 50px;
         object-fit: cover;
 
-        @media (width < $BP768) {
+        @media screen and (width < $BP768) {
           & {
             height: 135px;
             width: 335px;
@@ -102,13 +102,13 @@ About Section Styles
       margin-top: 100px;
       padding: 0 50px;
 
-      @media (width < $BP1600) {
+      @media screen and (width < $BP1600) {
         & {
           margin-top: 40px;
         }
       }
 
-      @media (width < $BP1200) {
+      @media screen and (width < $BP1200) {
         & {
           gap: 20px;
           margin-top: 50px;
@@ -116,7 +116,7 @@ About Section Styles
         }
       }
 
-      @media (width < $BP992) {
+      @media screen and (width < $BP992) {
         & {
           margin-top: 25px;
           padding: 0 50px;
@@ -126,14 +126,14 @@ About Section Styles
         }
       }
 
-      @media (width < $BP768) {
+      @media screen and (width < $BP768) {
         & {
           margin-top: 30px;
           column-gap: 60px;
         }
       }
 
-      @media (width < $BP576) {
+      @media screen and (width < $BP576) {
         & {
           padding: 0;
           column-gap: 10%;
@@ -147,13 +147,13 @@ About Section Styles
         width: 240px;
         height: 170px;
 
-        @media (width < $BP1200) {
+        @media screen and (width < $BP1200) {
           & {
             width: 200px;
           }
         }
 
-        @media (width < $BP768) {
+        @media screen and (width < $BP768) {
           & {
             width: 150px;
             height: 85px;
@@ -165,7 +165,7 @@ About Section Styles
           height: 40px;
           width: 40px;
 
-          @media (width < $BP768) {
+          @media screen and (width < $BP768) {
             & {
               height: 20px;
               width: 20px;
@@ -182,19 +182,19 @@ About Section Styles
       align-items: center;
       margin-top: 100px;
 
-      @media (width < $BP1600) {
+      @media screen and (width < $BP1600) {
         & {
           margin-top: 90px;
         }
       }
 
-      @media (width < $BP1200) {
+      @media screen and (width < $BP1200) {
         & {
           margin-top: 70px;
         }
       }
 
-      @media (width < $BP992) {
+      @media screen and (width < $BP992) {
         & {
           margin-top: 50px;
         }
@@ -214,20 +214,20 @@ About Section Styles
           $GradientCol2
         );
 
-        @media (width < $BP1600) {
+        @media screen and (width < $BP1600) {
           & {
             width: 100%;
             margin: 0 50px;
           }
         }
 
-        @media (width < $BP992) {
+        @media screen and (width < $BP992) {
           & {
             margin: 0;
           }
         }
 
-        @media (width < $BP768) {
+        @media screen and (width < $BP768) {
           & {
             height: 124px;
             border-radius: 30px;
@@ -242,7 +242,7 @@ About Section Styles
           text-transform: uppercase;
           letter-spacing: 0.04em;
 
-          @media (width < $BP992) {
+          @media screen and (width < $BP992) {
             & {
               font-size: 14px;
             }
@@ -271,7 +271,7 @@ About Section Styles
             &.phone__link {
               padding: 0 20px;
 
-              @media (width < $BP768) {
+              @media screen and (width < $BP768) {
                 & {
                   padding: 0;
                 }
@@ -283,7 +283,7 @@ About Section Styles
               font-size: 12px;
               font-weight: 400;
 
-              @media (width < $BP768) {
+              @media screen and (width < $BP768) {
                 & {
                   display: none;
                 }
