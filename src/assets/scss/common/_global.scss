@@ -23,7 +23,7 @@ h1 {
   line-height: 100%;
   color: $DarkCol;
 
-  @media (width < $BP768) {
+  @media screen and (max-width: $BP768) {
     & {
       font-size: 24px;
     }
@@ -38,7 +38,7 @@ h2 {
   line-height: 150%;
   color: $DarkCol;
 
-  @media (width < $BP768) {
+  @media screen and (max-width: $BP768) {
     & {
       font-size: 14px;
     }
@@ -54,12 +54,12 @@ a {
   line-height: 150%;
   color: $DarkCol;
 
-  @media (width < $BP1600) {
+  @media screen and (max-width: $BP1600) {
     & {
       font-size: 20px;
     }
   }
-  @media (width < $BP768) {
+  @media screen and (max-width: $BP768) {
     & {
       font-size: 12px;
     }
@@ -70,7 +70,7 @@ a {
   list-style-position: outside;
   padding-left: 0.66em;
 
-  @media (width < $BP768) {
+  @media screen and (max-width: $BP768) {
     & {
       font-size: 12px;
     }
@@ -87,12 +87,12 @@ a {
     color: $DarkCol;
     padding-left: 0.66em;
 
-    @media (width < $BP1600) {
+    @media screen and (max-width: $BP1600) {
       & {
         font-size: 20px;
       }
     }
-    @media (width < $BP768) {
+    @media screen and (max-width: $BP768) {
       & {
         font-size: 12px;
         line-height: 110%;
@@ -107,13 +107,13 @@ a {
   padding-right: 100px;
   width: 100%;
 
-  @media (width < $BP1600) {
+  @media screen and (max-width: $BP1600) {
     & {
       padding-left: 50px;
       padding-right: 50px;
     }
   }
-  @media (width < $BP576) {
+  @media screen and (max-width: $BP576) {
     & {
       padding-left: 20px;
       padding-right: 20px;

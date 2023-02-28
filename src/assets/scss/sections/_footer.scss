@@ -15,7 +15,7 @@ footer {
       text-align: center;
       margin-bottom: 50px;
 
-      @media (width < $BP768) {
+      @media screen and (max-width: $BP768) {
         & {
           max-width: 180px;
           margin-bottom: 15px;
@@ -27,7 +27,7 @@ footer {
       display: flex;
       gap: 30px;
 
-      @media (width < $BP768) {
+      @media screen and (max-width: $BP768) {
         & {
           gap: 20px;
         }
@@ -47,7 +47,7 @@ footer {
           background-color: $ActiveButtonCol;
         }
 
-        @media (width < $BP768) {
+        @media screen and (max-width: $BP768) {
           & {
             height: 50px;
             width: 50px;
@@ -74,7 +74,7 @@ footer {
     border-radius: 25px;
     margin-top: 100px;
 
-    @media (width < $BP768) {
+    @media screen and (max-width: $BP768) {
       & {
         margin-top: 80px;
       }
@@ -107,7 +107,7 @@ footer {
     margin-top: 50px;
     margin-bottom: 70px;
 
-    @media (width < $BP768) {
+    @media screen and (max-width: $BP768) {
       & {
         margin-bottom: 20px;
       }

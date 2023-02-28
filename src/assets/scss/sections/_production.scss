@@ -2,7 +2,7 @@
   width: 100%;
 
   .container {
-    @media ($BP992 <= width) {
+    @media screen and (min-width: $BP992) {
       & {
         display: grid;
         grid-template-columns: 650px 1fr;
@@ -11,19 +11,19 @@
       }
     }
 
-    @media ($BP992 <= width < $BP1600) {
+    @media screen and (min-width: $BP992) and (max-width: $BP1600) {
       & {
         padding: 70px 50px 80px;
       }
     }
-    @media ($BP992 <= width < $BP1200) {
+    @media screen and (min-width: $BP992) and (max-width: $BP1200) {
       & {
         grid-template-columns: 500px 1fr;
         grid-auto-rows: 50px;
         padding: 215px 50px 80px;
       }
     }
-    @media (width < $BP992) {
+    @media screen and (max-width: $BP992) {
       & {
         padding: 50px 50px 20px;
         display: flex;
@@ -31,12 +31,12 @@
         gap: 10px;
       }
     }
-    @media (width < $BP768) {
+    @media screen and (max-width: $BP768) {
       & {
         padding: 55px 50px 95px;
       }
     }
-    @media (width < $BP576) {
+    @media screen and (max-width: $BP576) {
       & {
         padding: 100px 20px 170px;
       }
@@ -48,7 +48,7 @@
       border-radius: 50px;
       overflow: hidden;
 
-      @media ($BP992 <= width) {
+      @media screen and (min-width: $BP992) {
         & {
           grid-column-start: 1;
           grid-column-end: 2;
@@ -56,7 +56,7 @@
           grid-row-end: 11;
         }
       }
-      @media (width < $BP768) {
+      @media screen and (max-width: $BP768) {
         & {
           border-radius: 30px;
         }
@@ -67,7 +67,7 @@
       display: flex;
       flex-direction: column;
 
-      @media ($BP992 <= width) {
+      @media screen and (min-width: $BP992) {
         & {
           grid-column-start: 2;
           grid-column-end: 3;
@@ -77,14 +77,14 @@
           margin-left: 50px;
         }
       }
-      @media ($BP992 <= width < $BP1200) {
+      @media screen and (min-width: $BP992) and (max-width: $BP1200) {
         & {
           grid-row-start: 1;
           grid-row-end: 3;
           margin-top: 30px;
         }
       }
-      @media (width < $BP992) {
+      @media screen and (max-width: $BP992) {
         & {
           margin-bottom: 20px;
         }
@@ -95,7 +95,7 @@
         width: 269px;
         margin-top: 10px;
 
-        @media (width < $BP768) {
+        @media screen and (max-width: $BP768) {
           & {
             height: 30px;
             width: 140px;
@@ -105,7 +105,7 @@
     }
 
     .description {
-      @media ($BP992 <= width) {
+      @media screen and (min-width: $BP992) {
         & {
           grid-column-start: 2;
           grid-column-end: 3;
@@ -115,7 +115,7 @@
           margin-top: 50px;
         }
       }
-      @media ($BP992 <= width < $BP1200) {
+      @media screen and (min-width: $BP992) and (max-width: $BP1200) {
         & {
           grid-row-start: 4;
           grid-row-end: 11;

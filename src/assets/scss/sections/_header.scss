@@ -21,7 +21,7 @@ Header Section Styles
       background-color: rgba(255, 255, 255, 0);
       object-fit: cover;
     }
-    @media ($BP768 <= width) {
+    @media screen and (min-width: $BP768) {
       &.horizontal {
         display: block;
       }
@@ -30,7 +30,7 @@ Header Section Styles
       }
     }
 
-    @media (width < $BP768) {
+    @media screen and (max-width: $BP768) {
       &.horizontal {
         display: none;
       }
@@ -51,12 +51,12 @@ Header Section Styles
     background: $LightCol;
     z-index: 1;
 
-    @media ($BP576 <= width < $BP768) {
+    @media screen and (min-width: $BP576) and (max-width: $BP768) {
       p {
         font-size: 20px;
       }
     }
-    @media (width < $BP576) {
+    @media screen and (max-width: $BP576) {
       p {
         font-size: 14px;
         line-height: 130%;
@@ -72,12 +72,12 @@ Header Section Styles
       margin-top: 20px;
       margin-bottom: 10px;
 
-      @media (width < $BP1600) {
+      @media screen and (max-width: $BP1600) {
         & {
           margin-top: 30px;
         }
       }
-      @media (width < $BP576) {
+      @media screen and (max-width: $BP576) {
         & {
           height: 15px;
         }
