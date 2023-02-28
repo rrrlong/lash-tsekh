@@ -1,0 +1,324 @@
+#advantages {
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    padding-top: 130px;
+    padding-bottom: 140px;
+
+    @media (width < $BP1600) {
+      & {
+        gap: 20px;
+        padding-top: 10px;
+        padding-bottom: 0;
+      }
+    }
+    @media (width < $BP1200) {
+      & {
+        padding-top: 50px;
+        padding-bottom: 80px;
+      }
+    }
+    @media (width < $BP992) {
+      & {
+        padding-top: 30px;
+        padding-bottom: 100px;
+        justify-content: space-between;
+      }
+    }
+    @media (width < $BP768) {
+      & {
+        padding-top: 20px;
+        padding-bottom: 45px;
+      }
+    }
+
+    .item {
+      height: 250px;
+      border-radius: 50px;
+      overflow: hidden;
+
+      @media (width < $BP768) {
+        & {
+          height: 120px;
+          border-radius: 30px;
+        }
+      }
+
+      &.logo {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+
+        @media (width < $BP1600) {
+          & {
+            width: 27%;
+          }
+        }
+        @media (width < $BP1200) {
+          & {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 0;
+          }
+        }
+        @media (width < $BP992) {
+          & {
+            margin-bottom: 10px;
+          }
+        }
+
+        img {
+          height: 57px;
+          width: 269px;
+          margin-top: 10px;
+
+          @media (width < $BP768) {
+            & {
+              height: 30px;
+              width: 140px;
+            }
+          }
+        }
+      }
+
+      &.image {
+        width: 250px;
+
+        @media (width < $BP992) {
+          & {
+            order: 7;
+          }
+        }
+        @media (width < $BP768) {
+          & {
+            height: 190px;
+            width: 190px;
+          }
+        }
+        @media (width < $BP576) {
+          & {
+            align-self: start;
+            height: 125px;
+            width: 125px;
+          }
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &.advantage {
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        background: linear-gradient($GradientCol2, $GradientCol1);
+
+        @media (width < $BP768) {
+          & {
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+
+        .heading {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            height: 40px;
+            width: 40px;
+
+            @media (width < $BP768) {
+              & {
+                height: 20px;
+                width: 20px;
+              }
+            }
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 24px;
+
+            @media (width < $BP1600) {
+              & {
+                font-size: 20px;
+              }
+            }
+            @media (width < $BP768) {
+              & {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .custom__list {
+          margin-top: 20px;
+
+          @media (width < $BP768) {
+            & {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        &.stability {
+          width: 771px;
+
+          @media (width < $BP1600) {
+            & {
+              width: 503px;
+            }
+          }
+          @media (width < $BP1200) {
+            & {
+              width: 69.7%;
+            }
+          }
+          @media (width < $BP992) {
+            & {
+              width: 100%;
+            }
+          }
+        }
+        &.speed {
+          width: 670px;
+
+          @media (width < $BP1600) {
+            & {
+              width: 398px;
+            }
+          }
+          @media (width < $BP1200) {
+            & {
+              width: 41.7%;
+            }
+          }
+          @media (width < $BP992) {
+            & {
+              width: 100%;
+
+              .list {
+                max-width: 400px;
+              }
+            }
+          }
+        }
+        &.safety {
+          width: 670px;
+
+          @media (width < $BP1600) {
+            & {
+              width: 516px;
+            }
+          }
+          @media (width < $BP1200) {
+            & {
+              width: 56%;
+            }
+          }
+          @media (width < $BP992) {
+            & {
+              width: 100%;
+            }
+          }
+        }
+        &.uniqueness {
+          width: 968px;
+
+          @media (width <= 1673px) {
+            & {
+              width: 888px;
+            }
+          }
+          @media (width < $BP1600) {
+            & {
+              width: 610px;
+            }
+          }
+          @media (width < $BP1200) {
+            & {
+              width: 63.9%;
+            }
+          }
+          @media (width < $BP992) {
+            & {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &.params {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 40px;
+        border: 2px solid $DarkCol;
+
+        @media (width < $BP1600) {
+          & {
+            width: 470px;
+            padding: 0;
+            padding-left: 40px;
+          }
+        }
+        @media (width < $BP1200) {
+          & {
+            gap: 15px;
+            width: 33.8%;
+            padding: 0 20px;
+          }
+        }
+        @media (width < $BP992) {
+          & {
+            width: 59.5%;
+          }
+        }
+        @media (width < $BP768) {
+          & {
+            height: 190px;
+            width: 55.8%;
+            padding: 20px 28px;
+            justify-content: space-between;
+          }
+        }
+        @media (width < $BP576) {
+          & {
+            width: 56.41%;
+            padding: 20px;
+          }
+        }
+
+        p {
+          font-size: 20px;
+
+          @media (width < $BP768) {
+            & {
+              font-size: 12px;
+            }
+          }
+
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

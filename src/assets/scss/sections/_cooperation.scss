@@ -1,0 +1,151 @@
+#cooperation {
+  width: 100%;
+
+  .container {
+    margin-top: 80px;
+    margin-bottom: 220px;
+
+    @media (width < $BP1600) {
+      & {
+        margin-top: 40px;
+      }
+    }
+    @media (width < $BP1200) {
+      & {
+        margin-top: 30px;
+        margin-bottom: 110px;
+      }
+    }
+    @media (width < $BP992) {
+      & {
+        margin-bottom: 60px;
+      }
+    }
+    @media (width < $BP768) {
+      & {
+        margin-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    @media (width < $BP576) {
+      & {
+        margin-top: 0;
+        margin-bottom: 110px;
+      }
+    }
+
+    .section__heading {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      @media (width < $BP992) {
+        & {
+          margin-bottom: 30px;
+        }
+      }
+      @media (width < $BP768) {
+        & {
+          margin-bottom: 20px;
+        }
+      }
+
+      img {
+        height: 57px;
+        width: 269px;
+        margin-top: 10px;
+
+        @media (width < $BP768) {
+          & {
+            height: 30px;
+            width: 140px;
+          }
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+
+      @media (width < $BP992) {
+        & {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 20px;
+        }
+      }
+
+      .item {
+        flex: 1;
+        border-radius: 50px;
+        padding: 30px;
+
+        @media (width < $BP992) {
+          & {
+            flex: auto;
+          }
+        }
+        @media (width < $BP768) {
+          & {
+            border-radius: 30px;
+            padding: 20px;
+          }
+        }
+
+        &.contract {
+          background: linear-gradient(to left, $GradientCol1, $GradientCol2);
+        }
+        &.franchise {
+          border: 1px solid #000000;
+        }
+
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 50px;
+
+          @media (width < $BP768) {
+            & {
+              margin-bottom: 10px;
+            }
+          }
+
+          h2 {
+            max-width: 250px;
+            text-transform: uppercase;
+          }
+
+          img {
+            height: 60px;
+            width: 60px;
+
+            @media (width < $BP768) {
+              & {
+                height: 20px;
+                width: 20px;
+              }
+            }
+          }
+        }
+
+        .description {
+          @media ($BP576 <= width < $BP992) {
+            & {
+              max-width: 90%;
+            }
+          }
+
+          .custom__list {
+            padding-left: 1.5em;
+            li {
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

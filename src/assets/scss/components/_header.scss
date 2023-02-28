@@ -1,0 +1,208 @@
+/* 
+============================
+Header Component Styles
+============================
+*/
+
+main {
+  padding-top: 30px;
+
+  @media (width < $BP768) {
+    & {
+      padding-top: 10px;
+    }
+  }
+}
+
+#header-component {
+  position: sticky;
+  top: 12px;
+  height: 43px;
+  z-index: 10;
+
+  // wrapper for correct blur when low screen width
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 43px;
+    transition: all ease 0.1s;
+
+    @media (width < $BP768) {
+      & {
+        background: rgba(245, 243, 239, 0.5);
+        backdrop-filter: blur(5px);
+        border-radius: 21.5px;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px;
+
+      @media ($BP768 <= width) {
+        & {
+          background: rgba(245, 243, 239, 0.5);
+          backdrop-filter: blur(5px);
+          border-radius: 21.5px;
+        }
+      }
+
+      .logo,
+      ul li {
+        line-height: 100%;
+        margin-right: 30px;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+
+        &:hover,
+        &:focus,
+        &.active {
+          color: $ActiveDarkCol;
+        }
+        &.active {
+          font-weight: 700;
+        }
+      }
+
+      .logo {
+        height: 33px;
+        width: 100px;
+      }
+
+      #nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (width < $BP768) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      height: 43px;
+      margin-right: 5px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 143px;
+        margin-left: 10px;
+        border: 1px solid $ActiveDarkCol;
+        border-radius: 12.5px;
+
+        @media ($BP768 <= width) {
+          & {
+            background: rgba(245, 243, 239, 0.01);
+            backdrop-filter: blur(5px);
+          }
+        }
+
+        img {
+          display: none;
+          height: 60%;
+          width: 60%;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+        }
+
+        @media (width < $BP1200) {
+          & {
+            width: 25px;
+          }
+          img {
+            display: block;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+
+      #menu-button {
+        display: none;
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+        border-radius: 50%;
+        background: linear-gradient(to left, $GradientCol1, $GradientCol2);
+
+        @media (width < $BP768) {
+          & {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+          }
+        }
+
+        span {
+          display: block;
+          width: 11px;
+          height: 2px;
+          background-color: $ActiveDarkCol;
+          border-radius: 1px;
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  @media (width < $BP768) {
+    &.active {
+      .wrapper {
+        height: 198px;
+
+        .logo,
+        ul li {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+
+        #nav-list {
+          position: absolute;
+          top: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        #menu-button {
+          flex-direction: row;
+          gap: 0;
+
+          span {
+            width: 9px;
+
+            &:first-child {
+              transform: translateX(2px) rotateZ(-0.125turn);
+            }
+            &:last-child {
+              transform: translateX(-2px) rotateZ(0.125turn);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/* 
+============================
+Header Section Styles
+============================
+*/
+
+#header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+
+    video {
+      background-color: rgba(255, 255, 255, 0);
+      object-fit: cover;
+    }
+    @media ($BP768 <= width) {
+      &.horizontal {
+        display: block;
+      }
+      &.vertical {
+        display: none;
+      }
+    }
+
+    @media (width < $BP768) {
+      &.horizontal {
+        display: none;
+      }
+      &.vertical {
+        display: block;
+      }
+    }
+  }
+
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $LightCol;
+    z-index: 1;
+
+    @media ($BP576 <= width < $BP768) {
+      p {
+        font-size: 20px;
+      }
+    }
+    @media (width < $BP576) {
+      p {
+        font-size: 14px;
+        line-height: 130%;
+      }
+    }
+
+    p:first-child {
+      margin-top: 30px;
+    }
+
+    .go__down__link {
+      height: 25px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+
+      @media (width < $BP1600) {
+        & {
+          margin-top: 30px;
+        }
+      }
+      @media (width < $BP576) {
+        & {
+          height: 15px;
+        }
+      }
+    }
+  }
+}

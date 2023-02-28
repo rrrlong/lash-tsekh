@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.min.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      http-equiv="X-UA-compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="robots"
+      content="index, follow, noodp"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow"
+    />
+    <meta
+      name="google"
+      content="notranslate"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=yes"
+    />
+
+    <title>ЛЭШЦЕХ</title>
+  </head>
+
+  <body>
+    
+    
+    <header id="header">
+      <div class="video vertical">
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          preload="metadata"
+          pip="false"
+          onloadedmetadata="this.muted = true"
+          width="100%"
+          height="100%"
+        >
+          <source
+            src="./assets/media/video/header-ver.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="video horizontal">
+        <video
+          loop
+          muted
+          autoplay
+          playsinline
+          preload="metadata"
+          pip="false"
+          onloadedmetadata="this.muted = true"
+          width="100%"
+          height="100%"
+        >
+          <source
+            src="./assets/media/video/header-hor.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="description">
+        <p>Эстетика в производстве ресниц.</p>
+        <p>Исскуство в каждом изгибе.</p>
+    
+        <a
+          class="go__down__link"
+          href="#about"
+        >
+          <img
+            src="./assets/media/icons/arrow-down.svg"
+            alt="arrow-down icon"
+            height="100%"
+            width="100%"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <section
+      id="header-component"
+      class="active"
+    >
+      <div class="container">
+        <div class="wrapper">
+          <nav>
+            <a
+              href="#header"
+              class="logo"
+              onclick="togleMenu()"
+            >
+              <img
+                src="./assets/media/img/logo-min.svg"
+                alt="logo"
+                height="100%"
+                width="100%"
+              />
+            </a>
+    
+            <ul id="nav-list">
+              <li>
+                <a
+                  class="active"
+                  href="#about"
+                  onclick="togleMenu()"
+                  >О&nbsp;нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#advantages"
+                  onclick="togleMenu()"
+                  >Преимущества</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#production"
+                  onclick="togleMenu()"
+                  >Производство</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#cooperation"
+                  onclick="togleMenu()"
+                  >Сотрудничество</a
+                >
+              </li>
+            </ul>
+          </nav>
+    
+          <div class="actions">
+            <a href="tel:+79999999999">
+              <p>+7(999)999 99-99</p>
+              <img
+                src="./assets/media/icons/phone-icon-dark.svg"
+                alt="phone icon"
+              />
+            </a>
+            <a
+              href="mailto:exsample@gmail.com?subject=&body="
+            >
+              <p>exsample@gmail.com</p>
+              <img
+                src="./assets/media/icons/mail-icon-dark.svg"
+                alt="mail icon"
+              />
+            </a>
+            <button
+              id="menu-button"
+              onclick="togleMenu()"
+            >
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section
+      id="about"
+      class="nav_block"
+    >
+      <div class="container">
+        <div class="heading">
+          <h1>
+            ЛЭШЦЕХ&nbsp;– российское производство ресниц для&nbsp;вашего бренда
+          </h1>
+          <img
+            src="./assets/media/img/about-11.png"
+            alt="pretty eyelashes"
+          />
+        </div>
+    
+        <div class="percs">
+          <div class="item">
+            <img
+              src="./assets/media/img/about-21.svg"
+              alt="theme icon"
+            />
+            <p>Доступные цены, независящие от курса валют</p>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/media/img/about-22.svg"
+              alt="theme icon"
+            />
+            <p>Премиум материалы – высококачественное моноволокно</p>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/media/img/about-23.svg"
+              alt="theme icon"
+            />
+            <p>Современный продукт для мастеров индустрии красоты</p>
+          </div>
+          <div class="item">
+            <img
+              src="./assets/media/img/about-24.svg"
+              alt="theme icon"
+            />
+            <p>Запатентованная технология производства ресниц</p>
+          </div>
+        </div>
+    
+        <div class="bait">
+          <div class="wrapper">
+            <h2>Получить образцы</h2>
+            <div class="actions">
+              <a
+                href="tel:+79999999999"
+                class="phone__link"
+              >
+                <img
+                  src="./assets/media/icons/phone-icon.svg"
+                  alt="phone icon"
+                />
+                <p>+7(999)999 99-99</p>
+              </a>
+              <a
+                href="mailto:exsample@gmail.com?subject=&body="
+              >
+                <img
+                  src="./assets/media/icons/mail-icon.svg"
+                  alt="mail icon"
+                />
+              </a>
+    
+              <a
+                href="https://wa.me/+79999999999"
+                target="_blank"
+              >
+                <img
+                  src="./assets/media/icons/watsapp-icon.svg"
+                  alt="whatsapp icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <section
+      id="advantages"
+      class="nav_block"
+    >
+      <div class="container">
+        <div class="item logo">
+          <h1>Только</h1>
+          <img
+            src="./assets/media/img/logo.svg"
+            alt="logo"
+          />
+        </div>
+    
+        <div class="item image">
+          <img
+            src="./assets/media/img/advantages-11.png"
+            alt="theme image"
+          />
+        </div>
+    
+        <div class="item advantage stability">
+          <div class="heading">
+            <img
+              src="./assets/media/img/advantages-21.svg"
+              alt="theme icon"
+            />
+            <p>Стабильность</p>
+          </div>
+          <ul class="custom__list">
+            <li>Российское производство с ценами, как в Китае</li>
+            <li>Устойчивый прайс</li>
+            <li>Собственные крупные закупки сырья</li>
+          </ul>
+        </div>
+    
+        <div class="item advantage speed">
+          <div class="heading">
+            <img
+              src="./assets/media/img/advantages-22.svg"
+              alt="theme icon"
+            />
+            <p>Скорость</p>
+          </div>
+          <ul class="custom__list">
+            <li>Срок изготовления заказа от одной недели</li>
+            <li>Доставка в течение нескольких дней</li>
+          </ul>
+        </div>
+    
+        <div class="item advantage safety">
+          <div class="heading">
+            <img
+              src="./assets/media/img/advantages-23.svg"
+              alt="theme icon"
+            />
+            <p>Безопасность</p>
+          </div>
+          <ul class="custom__list">
+            <li>Наша продукция сертифицирована</li>
+            <li>Работаем по официальному договору</li>
+            <li>Предоставляем все закрывающие документы</li>
+          </ul>
+        </div>
+    
+        <div class="item advantage uniqueness">
+          <div class="heading">
+            <img
+              src="./assets/media/img/advantages-24.svg"
+              alt="theme icon"
+            />
+            <p>Уникальность</p>
+          </div>
+          <ul class="custom__list">
+            <li>Набивка ленты выше, чем у аналогов</li>
+            <li>Гипоаллергенное корейское волокно нового поколения</li>
+            <li>Производим все виды изгибов и толщин</li>
+            <li>Любое цветовое решение</li>
+          </ul>
+        </div>
+    
+        <div class="item params">
+          <p><span>Линии:</span> 6; 8; 12; 14; 16; 20</p>
+          <p><span>Толщины:</span> 0,05; 0,06; 0,07; 0,10; 0,12; 0,15</p>
+          <p><span>Изгибы:</span> I; B; C; C+; CC; D; D+; L; L+; M; W</p>
+        </div>
+      </div>
+    </section>
+     <section
+      id="production"
+      class="nav_block"
+    >
+      <div class="container">
+        <div class="heading">
+          <h1>Производство</h1>
+          <img
+            src="./assets/media/img/logo.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="video">
+          <video
+            loop
+            muted
+            autoplay
+            playsinline
+            preload="metadata"
+            pip="false"
+            onloadedmetadata="this.muted = true"
+            width="100%"
+            height="100%"
+          >
+            <source
+              src="./assets/media/video/production.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="description">
+          <p>
+            Все этапы производства ресниц проходят строгий контроль, что позволяет
+            выпускать продукт высочайшего класса. Производство ресниц&nbsp;-
+            полностью ручной труд.
+          </p>
+    
+          <p>
+            Сочетание сырья нового поколения и ручной работы превращает наши ресницы
+            в настоящее произведение!
+          </p>
+        </div>
+      </div>
+    </section>
+     <section
+      id="cooperation"
+      class="nav_block"
+    >
+      <div class="container">
+        <div class="section__heading">
+          <h1>Будь с</h1>
+          <img
+            src="./assets/media/img/logo.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="wrapper">
+          <div class="item contract">
+            <div class="heading">
+              <h2>контрактное производство</h2>
+              <img
+                src="./assets/media/img/cooperation-contract.svg"
+                alt="contract icon"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Мы рады сотрудничать с каждым, кто хочет создать свой бренд ресниц.
+              </p>
+              <p>Завод ресниц предоставляет:</p>
+              <ul class="custom__list">
+                <li>конкурентный продукт</li>
+                <li>быструю доставку товара</li>
+                <li>сертифицируемую и декларируемую продукцию</li>
+                <li>курирование на пути создания бренда</li>
+                <li>помощь выхода на маркетплейсы</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="item franchise">
+            <div class="heading">
+              <h2>франшиза</h2>
+              <img
+                src="./assets/media/img/cooperation-franchise.svg"
+                alt="franchise icon"
+              />
+            </div>
+            <div class="description">
+              <p>
+                Если вы хотите открыть наше производство в своём городе, мы
+                предлагаем выгодные условия для развития франшизы:
+              </p>
+              <ul class="custom__list">
+                <li>полное документальное сопровождение</li>
+                <li>разработку фирменного стиля вашего цеха</li>
+                <li>обучение всем этапам уникального производства</li>
+                <li>маркетинговая поддержка</li>
+                <li>доступ к клиентской базе</li>
+                <li>сырье по закупочным ценам</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <footer>
+      <div class="bait">
+        <h2>получить прайс и&nbsp;образцы</h2>
+        <div class="actions">
+          <a href="tel:+79999999999">
+            <img
+              src="./assets/media/icons/phone-icon.svg"
+              alt="phone icon"
+            />
+          </a>
+          <a
+            href="mailto:exsample@gmail.com?subject=&body="
+          >
+            <img
+              src="./assets/media/icons/mail-icon.svg"
+              alt="mail icon"
+            />
+          </a>
+    
+          <a
+            href="https://wa.me/+79999999999"
+            target="_blank"
+          >
+            <img
+              src="./assets/media/icons/watsapp-icon.svg"
+              alt="whatsapp icon"
+            />
+          </a>
+        </div>
+      </div>
+    
+      <div class="logo">
+        <img
+          src="./assets/media/img/logo.svg"
+          alt="logo"
+        />
+      </div>
+    
+      <div class="social">
+        <a
+          href=""
+          target="_blank"
+        >
+          <img
+            src="./assets/media/icons/vk-icon.svg"
+            alt="vk icon"
+          />
+        </a>
+        <a
+          href=""
+          target="_blank"
+        >
+          <img
+            src="./assets/media/icons/inst-icon.svg"
+            alt="inst icon"
+          />
+        </a>
+        <a
+          href=""
+          target="_blank"
+        >
+          <img
+            src="./assets/media/icons/youtube-icon.svg"
+            alt="youtube icon"
+          />
+        </a>
+        <a
+          href=""
+          target="_blank"
+        >
+          <img
+            src="./assets/media/icons/tg-icon.svg"
+            alt="telegram icon"
+          />
+        </a>
+      </div>
+    
+      <div class="offer">
+        <a href="">публичная оферта</a>
+      </div>
+    </footer>
+    
+    </main>
+    
+    <script
+      type="text/javascript"
+      src="./assets/js/main.min.js"
+    ></script>
+    
+  </body>
+</html>

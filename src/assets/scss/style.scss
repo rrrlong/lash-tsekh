@@ -1,0 +1,13 @@
+// Global scss imports
+@import "./common/vars";
+@import "./common/reset";
+@import "./common/global";
+
+// Sections scss imports
+@import "./sections/header-section";
+@import "./components/header";
+@import "./sections/about";
+@import "./sections/advantages";
+@import "./sections/production";
+@import "./sections/cooperation";
+@import "./sections/footer";

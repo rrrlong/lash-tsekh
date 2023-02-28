@@ -1,0 +1,116 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .bait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      max-width: 270px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-align: center;
+      margin-bottom: 50px;
+
+      @media (width < $BP768) {
+        & {
+          max-width: 180px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 30px;
+
+      @media (width < $BP768) {
+        & {
+          gap: 20px;
+        }
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $ButtonCol;
+        height: 72px;
+        width: 72px;
+        border-radius: 36px;
+
+        &:hover,
+        &:focus {
+          background-color: $ActiveButtonCol;
+        }
+
+        @media (width < $BP768) {
+          & {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+          }
+        }
+
+        img {
+          max-width: 33%;
+          height: 33%;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    padding: 0 15px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    margin-top: 100px;
+
+    @media (width < $BP768) {
+      & {
+        margin-top: 80px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+
+    a {
+      height: 20px;
+      width: 20px;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .offer {
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    @media (width < $BP768) {
+      & {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

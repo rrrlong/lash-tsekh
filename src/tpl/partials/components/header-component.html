@@ -1,0 +1,81 @@
+<section
+  id="header-component"
+  class="active"
+>
+  <div class="container">
+    <div class="wrapper">
+      <nav>
+        <a
+          href="#header"
+          class="logo"
+          onclick="togleMenu()"
+        >
+          <img
+            src="./assets/media/img/logo-min.svg"
+            alt="logo"
+            height="100%"
+            width="100%"
+          />
+        </a>
+
+        <ul id="nav-list">
+          <li>
+            <a
+              class="active"
+              href="#about"
+              onclick="togleMenu()"
+              >О&nbsp;нас</a
+            >
+          </li>
+          <li>
+            <a
+              href="#advantages"
+              onclick="togleMenu()"
+              >Преимущества</a
+            >
+          </li>
+          <li>
+            <a
+              href="#production"
+              onclick="togleMenu()"
+              >Производство</a
+            >
+          </li>
+          <li>
+            <a
+              href="#cooperation"
+              onclick="togleMenu()"
+              >Сотрудничество</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a href="tel:{{ data.phone}}">
+          <p>{{ data.decorated-phone}}</p>
+          <img
+            src="./assets/media/icons/phone-icon-dark.svg"
+            alt="phone icon"
+          />
+        </a>
+        <a
+          href="mailto:{{ data.mail}}?subject={{ data.mail-subject}}&body={{ data.mail-body}}"
+        >
+          <p>{{ data.mail}}</p>
+          <img
+            src="./assets/media/icons/mail-icon-dark.svg"
+            alt="mail icon"
+          />
+        </a>
+        <button
+          id="menu-button"
+          onclick="togleMenu()"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
