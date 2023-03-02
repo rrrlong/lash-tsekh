@@ -2,6 +2,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 70px;
+
+  @media screen and (max-width: $BP768) {
+    & {
+      margin-bottom: 20px;
+    }
+  }
 
   .bait {
     display: flex;
@@ -82,6 +89,7 @@ footer {
 
     img {
       width: 100%;
+      transform: translateY(4%);
     }
   }
 
@@ -99,17 +107,6 @@ footer {
       img {
         height: 100%;
         width: 100%;
-      }
-    }
-  }
-
-  .offer {
-    margin-top: 50px;
-    margin-bottom: 70px;
-
-    @media screen and (max-width: $BP768) {
-      & {
-        margin-bottom: 20px;
       }
     }
   }
