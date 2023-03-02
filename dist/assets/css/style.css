@@ -1204,6 +1204,7 @@ About Section Styles
     width: 100%;
     border-radius: 50px;
     overflow: hidden;
+    transform: translateZ(0);
 }
 
 @media screen and (min-width: 991.98px) {
